@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Film Makaleleri</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <style>
+    body {
+      background-color: rgb(24 23 23);
+    }
+
+
+    header {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.6)), url("images/filmarkaplan.jpg");
+      background-size: cover;
+    }
+
+    .cardLineArrangement {
+      display: -webkit-box;
+      -webkit-line-clamp: 4;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .latestPostArrangement {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .card {
+      border-color: #ffc107;
+      border: 3px solid #ffc107;
+      background-color: rgb(24 23 23);
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark text-center fixed-top" style="background-color:rgb(51 48 48);">
+    <div class="container-fluid ">
+      <img class="justify-content-start" src="images/yellowmovie.png"
+        style="height: 50px; width:45px; margin-right: 70px; padding-left: 10px;">
+      <a class="navbar-brand " href="#">Film Makaleleri</a>
+      <button class="navbar-toggler bg-dark" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto my-2 my-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active " href="#">Anasayfa</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link  text-white" href="#film">Filmler</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-white" href="#">İletişim</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header>
+    <div class="container min-vh-100 d-flex justify-content-center align-items-center text-center">
+      <h1 class="fw-bolder display-1 text-warning">Film Sektöründeki Son Gelişmeler</h1>
+    </div>
+  </header>
+
+  <section class="my-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="row">
+            <div class="col-12">
+              <div id="carouselExampleCaptions" class="carousel slide">
+                <div class="carousel-inner ">
+
+                  <div class="carousel-item active">
+                    <img src="images/Black-Adam_5.jpg" class="d-block w-100">
+                    <div class="carousel-caption bottom-0 d-none d-md-block pb-0">
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/amsterdammovie.jpg" class="d-block w-100">
+                    <div class="carousel-caption bottom-0 d-none d-md-block pb-0">
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/spider.jpg" class="d-block w-100">
+                    <div class="carousel-caption bottom-0 d-none d-md-block pb-0">
+                    </div>
+
+                  </div>
+
+                  <div class="carousel-item">
+                    <img src="images/thor.png" class="d-block w-100">
+                    <div class="carousel-caption bottom-0 d-none d-md-block pb-0">
+                    </div>
+
+                  </div>
+                </div>
+                <button class="carousel-control-prev" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon bg-dark"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon bg-dark"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <!-- <div class="col-12 py-3">
+              <div class="shadow py-5 px-2">
+                <figure class="text-center">
+                  <blockquote class="blockquote">
+                    <p class="fs-2 pb-3">Frontend teknolojilerinde hangi frameworkte çalışırsanız
+                      çalışın
+                      temel
+                      frontend
+                      teknolojilerini çok iyi bilmeniz lazım</p>
+                  </blockquote>
+                  <figcaption class="blockquote-footer">
+                    <cite>Can Boz</cite>
+                  </figcaption>
+                </figure>
+              </div>
+
+            </div> -->
+            
+           
+              <div class="col-md-6 py-3" id="film">
+                <div class="card">
+                  <img src="images/Black-Adam_5.jpg" class="card-img-top">
+                  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h1 class="modal-title fs-5 text-dark" id="staticBackdropLabel">Black Adam</h1>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body fw-semibold text-dark">
+                          Black Adam, antik tanrıların kudretine denk özel güçler
+                          kazanan ve binlerce yıl tutsak kaldıktan sonra özgürlüğüne kavuşan anti-kahraman Black Adam’ın
+                          hikayesini konu ediyor. 5000 yıl önce Black Adam, antik tanrıların güçlerine sahip olur. Hapis
+                          kaldığı mezarından kurtulduktan sonra Black Adam, daha önce benzeri görülmemiş adalet biçimini
+                          modern dünyaya uygulamak için harekete geçer.
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-body text-center">
+                    <h5 class="card-title text-center fw-bold">Black Adam</h5>
+                    <p class="card-text cardLineArrangement">Black Adam, antik tanrıların kudretine denk özel güçler
+                      kazanan ve binlerce yıl tutsak kaldıktan sonra özgürlüğüne kavuşan anti-kahraman Black Adam’ın
+                      hikayesini konu ediyor. 5000 yıl önce Black Adam, antik tanrıların güçlerine sahip olur. Hapis
+                      kaldığı mezarından kurtulduktan sonra Black Adam, daha önce benzeri görülmemiş adalet biçimini
+                      modern dünyaya uygulamak için harekete geçer.</p>
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                      Devamını Oku
+                    </button>
+                    <iframe class="mt-3 col-12" width="" height="250" src="https://www.youtube.com/embed/SEd59_nWKw0"
+                      title="YouTube video player" frameborder="0"
+                      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                      allowfullscreen></iframe>
+                  </div>
+                </div>
+              </div>
+         
+          
+
+            <div class="col-md-6 py-3">
+              <div class="card">
+                <img src="images/amsterdammovie.jpg" class="card-img-top">
+                <div class="modal fade" id="Amsterdam" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                  aria-labelledby="AmsterdamLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="AmsterdamLabel">Amsterdam</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body fw-semibold text-dark">
+                        30'larda geçen Amsterdam, tanık oldukları cinayetin zanlısı
+                        haline gelen ve Amerikan tarihindeki en çirkin entrikalardan birini ortaya çıkaran üç arkadaşı
+                        takip
+                        ediyor. Birinci Dünya Savaşı sırasında asker olan Burt Berendsen, Harold Woodman ve hemşire
+                        Valerie
+                        Voze’un yolu, askeri bir hastanede kesişir ve kısa sürede yakın arkadaş olurlar. Onların hayatı,
+                        bir
+                        cinayete tanık olmalarıyla bambaşka bir hal alır. Tanık oldukları cinayetin şüphelisi olarak
+                        görülen
+                        Burt, Harold ve Valerie, kendilerini korumak için davayı araştırmaya karar verir. Onlar gerçeği
+                        ararken, Amerika tarihini sonsuza dek değiştirebilecek büyük bir gizemi ortaya çıkarır.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center fw-bold">Amsterdam</h5>
+                  <p class="card-text cardLineArrangement">30'larda geçen Amsterdam, tanık oldukları cinayetin zanlısı
+                    haline gelen ve Amerikan tarihindeki en çirkin entrikalardan birini ortaya çıkaran üç arkadaşı takip
+                    ediyor. Birinci Dünya Savaşı sırasında asker olan Burt Berendsen, Harold Woodman ve hemşire Valerie
+                    Voze’un yolu, askeri bir hastanede kesişir ve kısa sürede yakın arkadaş olurlar. Onların hayatı, bir
+                    cinayete tanık olmalarıyla bambaşka bir hal alır. Tanık oldukları cinayetin şüphelisi olarak görülen
+                    Burt, Harold ve Valerie, kendilerini korumak için davayı araştırmaya karar verir. Onlar gerçeği
+                    ararken, Amerika tarihini sonsuza dek değiştirebilecek büyük bir gizemi ortaya çıkarır.</p>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Amsterdam">
+                    Devamını Oku
+                  </button>
+                  <iframe class="mt-3 col-12" width="" height="250" src="https://www.youtube.com/embed/OjYuGv9Wpbk"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 py-3">
+              <div class="card">
+                <img src="images/spider.jpg" class="card-img-top">
+                <div class="modal fade" id="Spider" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                  aria-labelledby="SpiderLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="SpiderLabel">Spider-Man: No Way Home</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body fw-semibold text-dark">
+                        Örümcek-Adam Eve Dönüş Yok, kimliği açığa Örümcek-Adam'ın, sırrını geri vermesi için Doktor
+                        Strange'den yardım istemesiyle birlikte yaşananları konu ediyor. Örümcek-Adam'ın kimliği ifşa
+                        edilerek onun ve sevdiklerinin hayatı, halkın gözü önüne serilir. Kendisini büyük bir kaosun
+                        ortasında bulan Peter, aynı zamanda suç ortakları olarak lanse edilen MJ ve Ned'in hayatının da
+                        olumsuz etkilenmesine şahit olur. Arkadaşların üniversiteye girme şanslarının yok olmasına
+                        seyirci kalmak istemeyen Peter, sırrını geri vermesi için Doktor Strange'den yardım ister.
+                        Peter'ın yakarışından etkilenip ona yardım etmeyi kabul eden Strange, Unutma Büyüsü'nü yapmaya
+                        başlar. Ancak bu büyü, MJ, Ned, May ve Happy'nin de Örümcek-Adam'ın kim olduğunu unutmasına
+                        neden olacaktır. Arkadaşlarının kim olduğunu hatırlamasını, diğer kişilerin unutmasını isteyen
+                        Peter, Strange büyüyü yaparken parametreleri değiştirir. Ancak bu durum beklenmedik olaylara
+                        neden olur.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title  text-center fw-bold">Spider-Man: No Way Home</h5>
+                  <p class="card-text cardLineArrangement">Örümcek-Adam Eve Dönüş Yok, kimliği açığa Örümcek-Adam'ın,
+                    sırrını geri vermesi için Doktor Strange'den yardım istemesiyle birlikte yaşananları konu ediyor.
+                    Örümcek-Adam'ın kimliği ifşa edilerek onun ve sevdiklerinin hayatı, halkın gözü önüne serilir.
+                    Kendisini büyük bir kaosun ortasında bulan Peter, aynı zamanda suç ortakları olarak lanse edilen MJ
+                    ve Ned'in hayatının da olumsuz etkilenmesine şahit olur. Arkadaşların üniversiteye girme şanslarının
+                    yok olmasına seyirci kalmak istemeyen Peter, sırrını geri vermesi için Doktor Strange'den yardım
+                    ister. Peter'ın yakarışından etkilenip ona yardım etmeyi kabul eden Strange, Unutma Büyüsü'nü
+                    yapmaya başlar. Ancak bu büyü, MJ, Ned, May ve Happy'nin de Örümcek-Adam'ın kim olduğunu unutmasına
+                    neden olacaktır. Arkadaşlarının kim olduğunu hatırlamasını, diğer kişilerin unutmasını isteyen
+                    Peter, Strange büyüyü yaparken parametreleri değiştirir. Ancak bu durum beklenmedik olaylara neden
+                    olur.</p>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Spider">
+                    Devamını Oku
+                  </button>
+                  <iframe class="mt-3 col-12" width="" height="250" src="https://www.youtube.com/embed/mQ_F_0jA59k"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 py-3">
+              <div class="card">
+                <img src="images/thor.png" class="card-img-top">
+                <div class="modal fade" id="Thor" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                  aria-labelledby="ThorLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h1 class="modal-title fs-5 text-dark" id="ThorLabel">Thor: Aşk ve Gök Gürültüsü</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                      </div>
+                      <div class="modal-body fw-semibold text-dark">
+                        Thor: Aşk ve Gök Gürültüsü, tanrıları yok etmeye and içen
+                        Gorr the God Butcher'a karşı zorlu bir mücadeleye girişen Thor'un hikayesini konu ediyor. Thor,
+                        macera dolu hayatını ardında bırakarak, bu zamana kadar çıktığı yolculuklardan farklı olarak iç
+                        huzur yolculuğuna çıkar. Ancak onun huzurlu geçen emekliliği, Gorr the God Butcher olarak
+                        bilinen
+                        katilin ortaya çıkmasıyla kesintiye uğrar. Tanrıların yok edilmesini isteyen Gorr the God
+                        Butcher
+                        ile zorlu bir mücadeleye girişen Thor, bu süreçte Kral Valkyrie, Korg ve eski kız arkadaşı Jane
+                        Foster'ın yardımına başvurur. Ekip, Gorr the God Butcher amacına ulaşmadan önce onu durdurmak
+                        için
+                        zorlu bir maceraya atılır.
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Kapat</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card-body text-center">
+                  <h5 class="card-title  text-center fw-bold">Thor: Aşk ve Gök Gürültüsü</h5>
+                  <p class="card-text cardLineArrangement">Thor: Aşk ve Gök Gürültüsü, tanrıları yok etmeye and içen
+                    Gorr the God Butcher'a karşı zorlu bir mücadeleye girişen Thor'un hikayesini konu ediyor. Thor,
+                    macera dolu hayatını ardında bırakarak, bu zamana kadar çıktığı yolculuklardan farklı olarak iç
+                    huzur yolculuğuna çıkar. Ancak onun huzurlu geçen emekliliği, Gorr the God Butcher olarak bilinen
+                    katilin ortaya çıkmasıyla kesintiye uğrar. Tanrıların yok edilmesini isteyen Gorr the God Butcher
+                    ile zorlu bir mücadeleye girişen Thor, bu süreçte Kral Valkyrie, Korg ve eski kız arkadaşı Jane
+                    Foster'ın yardımına başvurur. Ekip, Gorr the God Butcher amacına ulaşmadan önce onu durdurmak için
+                    zorlu bir maceraya atılır.
+                  </p>
+                  <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#Thor">
+                    Devamını Oku
+                  </button>
+                  <iframe class="mt-3 col-12" width="" height="250" src="https://www.youtube.com/embed/jRSw0TIaZDI"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+        </div>
+        <div class="col-lg-3">
+          <div class="text-white shadow rounded-3 p-3 mb-3 text-center" style="border: 3px solid #524f4f;">
+            <img src="images/şanci.png" class="w-100 rounded">
+            <p class="fs-2 fw-bolder pt-3 text-warning">Mirkan Şanci</p>
+            <p class="">
+              Ziyaret ettiğiniz bu bloğu, izlediğim (beğendiğim ya da beğenmediğim) filmler hakkında eleştiri ve yorum
+              yazıları yazmak ve yayınlamak amaçlı açtım. Burada filmler üzerine değerlendirme yazıları ile birlikte
+              sinema sektörü ile ilgili güncel haberleri de paylaşıyorum
+              .
+            </p>
+          </div>
+
+          <div class="bg-white shadow rounded-3 mb-3">
+            <div class=" text-center p-3 rounded-1" style="background-color:#524f4f; ">
+              <h6 class="text-white mb-0 fs-4">Kategoriler</h6>
+            </div>
+
+            <ol class="list-group">
+              <li class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Aksiyon</div>
+
+                </div>
+                <span class="badge bg-warning rounded-pill text-black">27</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Komedi</div>
+
+                </div>
+                <span class="badge bg-warning rounded-pill text-black">45</span>
+              </li>
+              <li class="list-group-item d-flex justify-content-between align-items-start py-3">
+                <div class="ms-2 me-auto">
+                  <div class="fw-bold">Bilim Kurgu</div>
+
+                </div>
+                <span class="badge bg-warning rounded-pill text-black">25</span>
+              </li>
+            </ol>
+          </div>
+          <div class="bg-white shadow rounded-3 mb-3">
+            <div class="text-center p-3  rounded-1" style="background-color:#524f4f;">
+              <h6 class="text-white mb-0 fs-4">Son Yazılar</h6>
+            </div>
+
+            <ul class="list-group list-group-flush py-3">
+
+              <li class="list-group-item"><a class="text-decoration-none text-dark " target="_blank"
+                  href="https://www.ntv.com.tr/n-life/kultur-ve-sanat/henry-cavill-superman-olarak-geri-donecegini-dogruladi,XxTw2xw2wkykt_gDTyLPiA">Henry
+                  Cavill Superman olarak geri döneceğini doğruladı...</a></li>
+
+              <li class="list-group-item"><a class="text-decoration-none text-dark " target="_blank"
+                  href="https://blog.sinematv.com.tr/hugh-jackman-deadpool-3ye-wolverine-rolunde-donuyor/">Hugh
+                  Jackman’ın hayat verdiği Wolverine karakteri, yeni Deadpool filminde yer alacak...</a></li>
+
+              <li class="list-group-item"><a class="text-decoration-none text-dark " target="_blank"
+                  href="https://blog.sinematv.com.tr/imdbye-gore-tum-zamanlarin-en-iyi-10-gizem-filmi/">IMDb’ye göre tüm
+                  zamanların
+                  en iyi 10 gizem filmi...</a></li>
+
+
+              <li class="list-group-item"><a class="text-decoration-none text-dark " target="_blank"
+                  href="https://blog.sinematv.com.tr/avatar-the-way-of-water-filminden-ilk-fragman-yayinlandi/">‘Avatar:
+                  The Way of Water’
+                  filminden yeni fragman yayınlandı...</a></li>
+
+
+
+            </ul>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+  <nav class="my-5">
+    <ul class="pagination justify-content-center">
+      <li class="page-item disabled"><a class="page-link" style="color:black ;" href="#">Önceki</a></li>
+      <li class="page-item "><a class="page-link bg-warning text-dark" href="#">1</a></li>
+      <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+      <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+      <li class="page-item"><a class="page-link text-dark" href="#">4</a></li>
+      <li class="page-item"><a class="page-link text-dark" style="color:black ;" href="#">Sonraki</a></li>
+    </ul>
+  </nav>
+
+  <footer class="" style="background-color:rgb(51 48 48);">
+
+    <p class="py-3 text-white text-center mb-0">
+      Copyright © 2022 All Rights Reserved |<a class=" text-warning text-decoration-none"
+        href="https://twitter.com/Vettell05" target="_blank"> Mirkan Şanci </a>
+    </p>
+
+  </footer>
+
+
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
